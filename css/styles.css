@@ -1,1 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
+.background-lines {
+  background: white url('images/background-lines.svg') no-repeat center top;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}

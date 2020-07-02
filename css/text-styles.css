@@ -1,0 +1,68 @@
+h1 {
+  font-family: Heebo, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 101.68%;
+  color: #3777FF;
+}
+
+h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  text-transform: lowercase;
+  font-feature-settings: 'halt' on, 'kern' off;
+  text-align: center;
+  color: #3777FF;
+  margin-bottom: 42px;
+}
+
+h4 {
+  font-family: Heebo, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 0.66em;
+  text-indent: 0.66em;
+  text-transform: uppercase;
+}
+
+h6,
+nav li a{
+  font-family: Noto Sans JP, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 170.68%;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  font-feature-settings: 'vrt2' on, 'liga' off;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+span a {
+  color: white;
+}
+
+.btn a {
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3777FF;
+}

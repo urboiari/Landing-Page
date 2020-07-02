@@ -4,7 +4,11 @@
   margin: 0;
 }
 
-.background-lines {
+body {
+  padding-top: 20px;
+}
+
+#background-lines {
   background: white url('images/background-lines.svg') no-repeat center top;
   background-attachment: scroll;
   background-size: cover;
@@ -15,13 +19,17 @@
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1), inset -4px 4px 50px rgba(0, 0, 0, 0.05);
 }
 
+.section {
+  margin: 40px auto 0px;
+}
+
 /* NAVBAR */
 
 nav{
   display: flex;
   flex-flow: row;
   width: 80vw;
-  margin: 20px 10% 0;
+  margin: 0 10% 0;
   align-items: flex-start;
   justify-content: space-between;
   z-index: 9999;
@@ -40,12 +48,20 @@ nav li{
   list-style: none;
 }
 
-.nav-list {
-  visibility: visible;
-}
-
 nav li:last-child{
   margin-right: 0;
+}
+
+.nav-list:hover .nav-item{
+  opacity: 0.2;
+}
+
+.nav-list .nav-item:hover{
+  opacity: 1;
+}
+
+.nav-item {
+  transition: 0.4s;
 }
 
 .logo {
@@ -54,11 +70,10 @@ nav li:last-child{
 
 /* HEADER */
 
-.header-cont {
+#home {
   display: flex;
   flex-flow: row;
   width: 60%;
-  margin: 40px auto;
   align-items: center;
   justify-content: center;
 }
@@ -119,7 +134,8 @@ nav li:last-child{
   display: flex;
   flex-flow: column;
   width: 300px;
-  margin: 200px auto 50px;
+  margin: 100px auto 100px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -148,20 +164,19 @@ nav li:last-child{
 }
 
 /* ABOUT US/CONTACT */
-.about-us-cont,
-.contact-cont {
+#about,
+#contact {
   width: fit-content;
-  margin: 0 auto;
 }
 
-.about-us-cont p,
-.contact-cont p {
+#about p,
+#contact p {
   width: 900px;
   margin-bottom: 42px;
   text-align: center;
 }
 
-.about-us-cont img {
+#about img {
   display: block;
   margin: 0 auto 42px;
 }

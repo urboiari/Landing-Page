@@ -5,8 +5,6 @@
 }
 
 .background-lines {
-  height: 100%;
-  padding-top: 70px;
   background: white url('images/background-lines.svg') no-repeat center top;
   background-attachment: scroll;
   background-size: cover;
@@ -40,6 +38,10 @@ nav ul {
 nav li{
   margin-right: 20px;
   list-style: none;
+}
+
+.nav-list {
+  visibility: visible;
 }
 
 nav li:last-child{

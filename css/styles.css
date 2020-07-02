@@ -1,8 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?
-family=Heebo:wght@100;200;300;400;500;600;700;800;900
-&family=Noto+Sans+JP:wght@100;300;400;500;700;900
-&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800
-&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;334;400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -16,17 +12,13 @@ family=Heebo:wght@100;200;300;400;500;600;700;800;900
   overflow: hidden;
 }
 
-.wrapper {
-  margin: 0 243px;
-}
-
 /* NAVBAR */
 nav{
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 243px;
+  margin: 20px 15%;
 }
 
 nav ul {
@@ -47,6 +39,94 @@ nav li a {
   text-decoration: none;
   color: #000000;
   font-family: Noto Sans JP, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* HEADER */
+.header-cont {
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.header-gallery {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 430px;
+}
+
+.image {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1), inset -4px 4px 50px rgba(0, 0, 0, 0.05);
+}
+
+#header-image-1 {
+  width: 430px;
+  height: 430px;
+  margin-bottom: 29px;
+  background: #B8DBD9 url('images/white-house.png');
+  background-size: contain;
+}
+
+#header-image-2 {
+  width: 230px;
+  height: 320px;
+  margin-right: 29px;
+  background: #B8DBD9 url('images/orange-apartments.png') no-repeat;
+  background-size: cover;
+}
+
+#header-image-3 {
+  width: 170px;
+  height: 320px;
+  background: #B8DBD9 url('images/space-building.png');
+  background-size: cover;
+}
+
+.header-text {
+  display: inline-block;
+  width: 490px;
+  height: 470px;
+}
+
+h1 {
+  font-family: Heebo, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 101.68%;
+  color: #3777FF;
+}
+
+p {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 170.68%;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  font-feature-settings: 'vrt2' on, 'liga' off;
+  color: #000000;
+}
+
+.btn {
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  outline: solid #3777FF 3px;
+  text-align: center;
+  margin: 3px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #3777FF;
+  font-family: Raleway, sans-serif;
   font-weight: 300;
   font-size: 16px;
   text-transform: uppercase;

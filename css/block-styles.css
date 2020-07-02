@@ -6,6 +6,7 @@
 
 .background-lines {
   height: 100%;
+  padding-top: 70px;
   background: white url('images/background-lines.svg') no-repeat center top;
   background-attachment: scroll;
   background-size: cover;
@@ -19,25 +20,36 @@
 /* NAVBAR */
 
 nav{
+  position: fixed;
   display: flex;
   flex-flow: row;
-  margin: 20px 10%;
-  align-items: center;
+  width: 80vw;
+  margin: 20px 10% 0;
+  align-items: flex-start;
   justify-content: space-between;
+  z-index: 9999;
 }
 
 nav ul {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
 }
 
 nav li{
-  margin-right: 60px;
+  margin-bottom: 20px;
   list-style: none;
+  /* border-radius: 3px;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1), inset -4px 4px 50px rgba(0, 0, 0, 0.05); */
 }
 
 nav li:last-child{
   margin-right: 0;
+}
+
+.logo {
+  display: inline;
 }
 
 /* HEADER */

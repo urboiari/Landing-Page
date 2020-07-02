@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* NAVBAR */
 nav{
   display: flex;
@@ -38,8 +43,6 @@ nav li:last-child{
 
 nav li a,
 h6{
-  text-decoration: none;
-  color: #000000;
   font-family: Noto Sans JP, sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -176,11 +179,15 @@ h2 {
   text-align: center;
 }
 
+span a {
+  color: white;
+}
+
 .photo-gallery {
   display: flex;
   flex-direction: row;
   width: fit-content;
-  margin:0 auto 20px;
+  margin:40px auto 40px;
 }
 
 .gallery {

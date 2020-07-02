@@ -177,6 +177,7 @@ h2 {
   font-feature-settings: 'halt' on, 'kern' off;
   color: #3777FF;
   text-align: center;
+  margin-bottom: 42px;
 }
 
 span a {
@@ -187,7 +188,7 @@ span a {
   display: flex;
   flex-direction: row;
   width: fit-content;
-  margin:40px auto 40px;
+  margin: -24px auto 42px;
 }
 
 .gallery {
@@ -201,18 +202,28 @@ span a {
   text-align: center;
 }
 
-/* ABOUT US */
-.about-us-cont {
+/* ABOUT US/CONTACT */
+.about-us-cont,
+.contact-cont {
   width: fit-content;
   margin: 0 auto;
 }
 
-.about-us-cont p {
+.about-us-cont p,
+.contact-cont p {
   width: 900px;
   text-align: center;
+  margin-bottom: 42px;
 }
 
 .about-us-cont img {
   display: block;
-  margin: 42px auto;
+  margin: 0 auto 42px;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 50px auto;
 }

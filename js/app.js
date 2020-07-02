@@ -1,36 +1,7 @@
-/**
- *
- * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- *
- * Dependencies: None
- *
- * JS Version: ES2015/ES6
- *
- * JS Standard: ESlint
- *
-*/
-
-
-
-
-/**
- * Define Global Variables
- *
-*/
-let sectionsRaw = document.querySelectorAll('.section')
-let navBar = document.querySelector('nav')
+// GLOBAL VARIABLES
+const sectionsRaw = document.querySelectorAll('.section');
+let navBar = document.querySelector('nav');
 let sections = []
-
-/**
- * End Global Variables
- * Start Helper Functions
- *
-*/
-
-
 
 /**
  * End Helper Functions
@@ -39,16 +10,15 @@ let sections = []
 */
 
 // build the nav
-getSections = () => {
+function getSections() {
   let sectionsArray = Array.from(sectionsRaw);
   for (let i = 0; i < sectionsArray.length; i ++) {
     const section = sectionsArray[i].id
     sections.push(section);
   }
-  // console.log(sections);
 }
 
-buildList = (element) => {
+function buildList(element) {
   let ul = document.createElement('ul');
   ul.classList.add('nav-list');
   element.appendChild(ul);
@@ -64,12 +34,25 @@ buildList = (element) => {
 }
 getSections();
 buildList(navBar);
-console.log(sections);
+const links = document.querySelectorAll('nav ul a');
+
 // Add class 'active' to section when near top of viewport
 
 
-// Scroll to anchor ID using scrollTO event
+// Scroll to anchor ID using scrollTo event
+for (const link of links) {
+  link.addEventListener('click', scrollTo);
+}
 
+function scrollTo(e) {
+  e.preventDefault()
+  let href = this.getAttribute('href');
+  let topPos = document.querySelector(href).offsetTop;
+  scroll({
+    top: topPos,
+    behavior: 'smooth'
+  });
+}
 
 /**
  * End Main Functions

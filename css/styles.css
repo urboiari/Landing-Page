@@ -7,6 +7,7 @@
 
 .background-lines {
   background: white url('images/background-lines.svg') no-repeat center top;
+  background-attachment: scroll;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -35,7 +36,8 @@ nav li:last-child{
   margin-right: 0;
 }
 
-nav li a {
+nav li a,
+h6{
   text-decoration: none;
   color: #000000;
   font-family: Noto Sans JP, sans-serif;
@@ -159,5 +161,28 @@ h4 {
 }
 
 .blue-line {
-  margin: 20px 0;
+  margin-top: 20px;
+}
+
+/* ARCHITECTURE GALLERY */
+h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  text-transform: lowercase;
+  font-feature-settings: 'halt' on, 'kern' off;
+  color: #3777FF;
+  text-align: center;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-caption {
+  position: relative;
+  top: 308px;
+  text-align: center;
 }

@@ -118,6 +118,7 @@ p {
 
 .header-text p {
   margin: 30px 0;
+  width: 80%;
 }
 
 .btn {
@@ -136,4 +137,27 @@ p {
   font-weight: 300;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+/* SECTION HEAD */
+.section-head {
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+h4 {
+  font-family: Heebo, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 0.66em;
+  text-indent: 0.66em;
+  text-transform: uppercase;
+}
+
+.blue-line {
+  margin: 20px 0;
 }

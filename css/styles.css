@@ -149,7 +149,7 @@ p {
   display: flex;
   flex-flow: column;
   width: 300px;
-  margin: 150px auto;
+  margin: 200px auto 50px;
   text-align: center;
 }
 
@@ -199,4 +199,20 @@ span a {
   position: relative;
   top: 308px;
   text-align: center;
+}
+
+/* ABOUT US */
+.about-us-cont {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about-us-cont p {
+  width: 900px;
+  text-align: center;
+}
+
+.about-us-cont img {
+  display: block;
+  margin: 42px auto;
 }

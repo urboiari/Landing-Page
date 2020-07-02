@@ -18,7 +18,7 @@ nav{
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 15%;
+  margin: 20px 20%;
 }
 
 nav ul {
@@ -48,8 +48,9 @@ nav li a {
 .header-cont {
   display: flex;
   flex-flow: row;
-  align-self: center;
-  width: 70%;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
   margin: 20px auto;
 }
 
@@ -58,6 +59,7 @@ nav li a {
   flex-flow: row;
   flex-wrap: wrap;
   width: 430px;
+  margin-right: 50px;
 }
 
 .image {

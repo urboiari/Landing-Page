@@ -179,9 +179,16 @@ h2 {
 .photo-gallery {
   display: flex;
   flex-direction: row;
+  width: fit-content;
+  margin:0 auto 20px;
+}
+
+.gallery {
+  margin:0 50px;
 }
 
 .image-caption {
+  /* display: none; */
   position: relative;
   top: 308px;
   text-align: center;

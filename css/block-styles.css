@@ -12,7 +12,7 @@ body {
   background: white url('images/background-lines.svg') no-repeat center top;
   background-attachment: scroll;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .image {
@@ -20,7 +20,8 @@ body {
 }
 
 .section {
-  margin: 40px auto 0px;
+  margin: 0 auto 0px;
+  padding: 40px 0;
 }
 
 /* NAVBAR */
@@ -144,6 +145,10 @@ nav li:last-child{
 }
 
 /* PRODUCT GALLERIES */
+#products {
+  width: 80%;
+}
+
 .photo-gallery {
   display: flex;
   flex-direction: row;
@@ -166,13 +171,13 @@ nav li:last-child{
 /* ABOUT US/CONTACT */
 #about,
 #contact {
-  width: fit-content;
+  width: 60%;
 }
 
 #about p,
 #contact p {
   width: 900px;
-  margin-bottom: 42px;
+  margin: 0 auto 42px;
   text-align: center;
 }
 
@@ -184,6 +189,7 @@ nav li:last-child{
 .social-icons {
   display: flex;
   flex-flow: row;
+  width: 60%;
   margin: 50px auto;
   justify-content: space-between;
 }

@@ -58,10 +58,10 @@ window.addEventListener('scroll', function(event) {
   }
   for (section of sections) {
     if (currentSection == section) {
-      document.querySelector(`#${section}`).style.background = 'black';
+      document.querySelector(`#${section}`).style.boxShadow = '0 0 50px 50px #E8E8E8';
     }
     else {
-      document.querySelector(`#${section}`).style.background = 'none';
+      document.querySelector(`#${section}`).style.boxShadow = 'none';
     }
   }
 

@@ -22,7 +22,7 @@ body {
 
 .section {
   margin: 0 auto 0px;
-  padding: 40px 0;
+  padding: 40px 3vw;
   border-radius: 20px;
 }
 
@@ -44,12 +44,30 @@ body {
   }
 }
 
+@keyframes opacity-low {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes opacity-high {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1
+  }
+}
+
 /* NAVBAR */
 nav{
   display: flex;
   flex-flow: row;
   width: 80vw;
-  margin: 0 10% 0;
+  margin: 0 10% 2vw;
   align-items: flex-start;
   justify-content: space-between;
   z-index: 9999;
@@ -73,7 +91,7 @@ nav li:last-child{
 }
 
 .nav-list:hover .nav-item{
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .nav-list .nav-item:hover{
@@ -93,46 +111,35 @@ nav li:last-child{
 #home {
   display: flex;
   flex-flow: row;
-  width: 60%;
+  width: fit-content;
   align-items: center;
   justify-content: center;
+  margin: 0 5vw;
 }
 
 .header-gallery {
   display: flex;
   flex-flow: row;
-  flex-wrap: wrap;
-  width: 430px;
+  flex-wrap: nowrap;
+  height: auto;
   margin-right: 50px;
 }
 
-#header-image-1 {
-  width: 400px;
-  height: 400px;
-  margin-bottom: 29px;
-  background: #B8DBD9 url('images/white-house.png');
-  background-size: contain;
+.imgwrap {
+  margin: 0 30px 0;
 }
 
-#header-image-2 {
-  width: 215px;
-  height: 320px;
-  margin-right: 29px;
-  background: #B8DBD9 url('images/orange-apartments.png') no-repeat;
-  background-size: cover;
-}
-
-#header-image-3 {
-  width: 155px;
-  height: 320px;
-  background: #B8DBD9 url('images/space-building.png');
-  background-size: cover;
+.header-gallery .image {
+  display: inline;
+  height: auto;
+  max-height: 400px;
+  max-width: 100%;
 }
 
 .header-text {
   display: inline-block;
-  width: 490px;
-  height: 470px;
+  width: 30vw;
+  height: fit-content;
 }
 
 .header-text p {
@@ -174,6 +181,7 @@ nav li:last-child{
 }
 
 .photo-gallery {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: fit-content;
@@ -189,6 +197,8 @@ nav li:last-child{
 
 .gallery .image {
   transition: 0.5s;
+  width: 100%;
+  height: 100%;
 }
 
 .image-caption {
@@ -206,11 +216,11 @@ nav li:last-child{
 #about,
 #contact {
   width: 60%;
+  position: relative;
 }
 
 #about p,
 #contact p {
-  width: 900px;
   margin: 0 auto 42px;
   text-align: center;
 }
@@ -218,6 +228,8 @@ nav li:last-child{
 #about .image {
   display: block;
   margin: 0 auto 42px;
+  width: 100%;
+  height: 100%;
 }
 
 #about .image:hover {

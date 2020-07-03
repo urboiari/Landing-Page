@@ -59,20 +59,18 @@ window.addEventListener('scroll', function(event) {
     if (currentSection == section) {
       document.querySelector(`#${section}`).style.animation = 'shadow-on 0.5s 1';
       document.querySelector(`#${section}`).style.animationFillMode = 'forwards';
+      document.querySelector(`#nav-${section}`).style.animation = 'opacity-low 0.5s 1';
+      document.querySelector(`#nav-${section}`).style.animationFillMode = 'forwards';
     }
     else {
       document.querySelector(`#${section}`).style.animation = 'shadow-off 0.5s 1';
+      document.querySelector(`#nav-${section}`).style.animation = 'opacity-high 0.5s 1';
     }
   }
 
 });
 
 // NAV AUTO-SCROLLING
-// Add event listener to all links and run function scrollTo on click
-for (const link of links) {
-  link.addEventListener('click', scrollTo);
-}
-
 // Function to scroll to top of selected section (done by finding the href)
 function scrollTo(e) {
   e.preventDefault();
@@ -82,4 +80,9 @@ function scrollTo(e) {
     top: topPos,
     behavior: 'smooth'
   });
+}
+
+// Add event listener to all links and run function scrollTo on click
+for (const link of links) {
+  link.addEventListener('click', scrollTo);
 }

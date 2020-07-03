@@ -2,7 +2,7 @@ h1 {
   font-family: Heebo, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 72px;
+  font-size: 4vw;
   line-height: 101.68%;
   color: #3777FF;
 }
@@ -11,7 +11,7 @@ h2 {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
-  font-size: 48px;
+  font-size: 2.7vw;
   text-transform: lowercase;
   font-feature-settings: 'halt' on, 'kern' off;
   text-align: center;
@@ -41,7 +41,7 @@ p {
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.2vw;
   line-height: 170.68%;
   letter-spacing: 0.05em;
   text-transform: lowercase;

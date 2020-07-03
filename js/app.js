@@ -2,6 +2,7 @@
 const sectionsRaw = document.querySelectorAll('.section');
 let navBar = document.querySelector('nav');
 let sections = []
+let currentSection = 'none'
 
 /**
  * End Helper Functions
@@ -37,7 +38,34 @@ buildList(navBar);
 const links = document.querySelectorAll('nav ul a');
 
 // Add class 'active' to section when near top of viewport
+(window.innerHeight || document.documentElement.clientHeight)
+function topOfViewport(element) {
+  const check = element.getBoundingClientRect();
+  if (check.bottom >= 114 && check.top <= 400) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
 
+window.addEventListener('scroll', function(event) {
+  for (section of sections) {
+    let selector = document.querySelector(`#${section}`);
+    if (topOfViewport(selector)) {
+      currentSection = section;
+    }
+  }
+  for (section of sections) {
+    if (currentSection == section) {
+      document.querySelector(`#${section}`).style.background = 'black';
+    }
+    else {
+      document.querySelector(`#${section}`).style.background = 'none';
+    }
+  }
+
+});
 
 // Scroll to anchor ID using scrollTo event
 for (const link of links) {

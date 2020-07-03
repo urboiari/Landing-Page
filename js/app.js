@@ -4,13 +4,7 @@ let navBar = document.querySelector('nav');
 let sections = []
 let currentSection = 'none'
 
-/**
- * End Helper Functions
- * Begin Main Functions
- *
-*/
-
-// build the nav
+// BUILD NAV
 function getSections() {
   let sectionsArray = Array.from(sectionsRaw);
   for (let i = 0; i < sectionsArray.length; i ++) {
@@ -37,7 +31,7 @@ getSections();
 buildList(navBar);
 const links = document.querySelectorAll('nav ul a');
 
-// Add class 'active' to section when near top of viewport
+// ACTIVE SECTIONS
 (window.innerHeight || document.documentElement.clientHeight)
 function topOfViewport(element) {
   const check = element.getBoundingClientRect();
@@ -68,7 +62,7 @@ window.addEventListener('scroll', function(event) {
 
 });
 
-// Scroll to anchor ID using scrollTo event
+// NAV AUTO-SCROLLING
 for (const link of links) {
   link.addEventListener('click', scrollTo);
 }
@@ -82,15 +76,3 @@ function scrollTo(e) {
     behavior: 'smooth'
   });
 }
-
-/**
- * End Main Functions
- * Begin Events
- *
-*/
-
-// Build menu
-
-// Scroll to section on link click
-
-// Set sections as active

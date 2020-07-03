@@ -5,7 +5,7 @@
 }
 
 body {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 #background-lines {
@@ -17,11 +17,14 @@ body {
 
 .image {
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1), inset -4px 4px 50px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .section {
   margin: 0 auto 0px;
   padding: 40px 0;
+  border-radius: 20px;
 }
 
 @keyframes shadow-on {
@@ -146,6 +149,11 @@ nav li:last-child{
   line-height: 50px;
   text-align: center;
   outline: solid #3777FF 3px;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 /* SECTION HEADERS */
@@ -175,16 +183,27 @@ nav li:last-child{
 }
 
 .gallery {
+  display: flex;
+  flex-flow: row;
   margin:0 50px;
   position: relative;
 }
 
+.gallery .image {
+  transition: 0.5s;
+}
+
 .image-caption {
-  display: none;
   position: absolute;
   left: 50%;
   top: 50%;
+  opacity: 0;
 }
+
+.image:hover {
+  transform: scale(1.05);
+}
+
 
 /* ABOUT US/CONTACT */
 #about,
@@ -199,9 +218,13 @@ nav li:last-child{
   text-align: center;
 }
 
-#about img {
+#about .image {
   display: block;
   margin: 0 auto 42px;
+}
+
+#about .image:hover {
+  transform: none;
 }
 
 .social-icons {
@@ -210,6 +233,12 @@ nav li:last-child{
   width: 60%;
   margin: 50px auto;
   justify-content: space-between;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.05);
 }
 
 /* FOOTER */

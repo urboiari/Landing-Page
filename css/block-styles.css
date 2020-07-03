@@ -24,6 +24,24 @@ body {
   padding: 40px 0;
 }
 
+@keyframes shadow-on {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 50px 50px #F0F0F0;
+  }
+}
+
+@keyframes shadow-off {
+  0% {
+    box-shadow: 0 0 50px 50px #F0F0F0;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
 /* NAVBAR */
 
 nav{

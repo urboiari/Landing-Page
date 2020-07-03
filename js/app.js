@@ -58,10 +58,11 @@ window.addEventListener('scroll', function(event) {
   }
   for (section of sections) {
     if (currentSection == section) {
-      document.querySelector(`#${section}`).style.boxShadow = '0 0 50px 50px #E8E8E8';
+      document.querySelector(`#${section}`).style.animation = 'shadow-on 0.5s 1';
+      document.querySelector(`#${section}`).style.animationFillMode = 'forwards';
     }
     else {
-      document.querySelector(`#${section}`).style.boxShadow = 'none';
+      document.querySelector(`#${section}`).style.animation = 'shadow-off 0.5s 1';
     }
   }
 
